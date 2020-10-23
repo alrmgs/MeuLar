@@ -1,0 +1,42 @@
+@import "../../../global.css";
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  width: 100%;
+  max-width: 800px;
+
+  height: 75%;
+
+  background-color: var(--bg-form-color);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-family: "Open-Sans", sans-serif;
+    text-align: center;
+    width: 70%;
+}
+
+a {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-family: "Open-Sans", sans-serif;
+    margin-top: 20px;
+    text-decoration: none;
+}

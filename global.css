@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --bg-color: #dfdede;
+  --bg-form-color: #fff;
+  --border: 1px solid #8c8c8c;
+  --button-bg: #2278fa;
+  --button-bg-hover: #3f88f7;
+  --primary-color: #555555;
+  --secondary-color: #fff;
+}
+
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #fff inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--primary-color) !important;
+}
+
+.is-invalid {
+  border: 1px solid #f00 !important;
+}
+
+.is-valid {
+  border: 1px solid #24fa24 !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}

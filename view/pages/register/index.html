@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../../global.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <form>
+        <h1>Cadastro</h1>
+        <p>Insira suas informações</p>
+        <div id="account-main">
+          <input type="text" placeholder="Nome" id="name" name="nome" />
+          <input
+            type="text"
+            placeholder="CPF"
+            id="cpf"
+            name="cpf"
+            maxlength="14"
+          />
+          <input
+            type="text"
+            placeholder="Contato"
+            id="contact"
+            maxlength="15"
+          />
+        </div>
+
+        <div id="address">
+          <input type="text" placeholder="CEP" id="cep" maxlength="9" />
+          <input type="text" placeholder="Endereço" id="street" />
+          <input type="text" placeholder="Bairro" id="neighborhood" />
+          <input type="text" placeholder="Cidade" id="city" />
+          <select id="uf">
+            <option value="none">UF</option>
+          </select>
+        </div>
+
+        <div id="account-info">
+          <input type="email" id="email" placeholder="E-mail" />
+          <input
+            type="password"
+            id="pass"
+            placeholder="Senha até 13 caracteres"
+            maxlength="13"
+          />
+          <input
+            type="password"
+            placeholder="Confirmar senha"
+            maxlength="13"
+            id="passConfirm"
+          />
+        </div>
+
+        <input type="submit" value="Cadastrar" id="submit" />
+      </form>
+
+      <img src="../../assets/cadastro_pessoas.png" alt="Cadastro" />
+    </div>
+
+    <div id="message" class="hidden" ></div>
+
+    <script src="../../components/functions/getInfo.js"></script>
+    <script src="../../components/functions/validation.js"></script>
+    <script src="../../components/functions/masks.js"></script>
+    <script src="register.js"></script>
+  </body>
+</html>

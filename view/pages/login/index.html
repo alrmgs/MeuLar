@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../../global.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <section>
+      <figure>
+        <figcaption class="hidden">Login</figcaption>
+        <img src="../../assets/cadastro_pessoas.png" alt="Cadastro" />
+      </figure>
+
+      <form method="POST">
+        <h2>Login</h2>
+        <div id="info">
+          <label for="email" class="hidden">Email</label>
+          <input type="email" placeholder="Email" id="email" />
+
+          <label for="pass" class="hidden">Senha</label>
+          <input type="password" placeholder="Senha" id="pass" />
+        </div>
+
+        <div id="buttonSubmit">
+          <input type="submit" value="Login" id="loginButton" />
+          <a href="../working/">Esqueci minha senha</a>
+        </div>
+      </form>
+    </section>
+
+    <div id="message" class="hidden" ></div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
